@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACE,OADK,AAAA,cAAc,CACnB,eAAe,CAAC;EACd,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,SAAS;CAkBnB;;AAtBH,AAKI,OALG,AAAA,cAAc,CACnB,eAAe,CAIb,MAAM,CAAC;EACL,aAAa,EAAE,IAAI;EACnB,KAAK,ECLI,OAAO;CDMjB;;AARL,AAUI,OAVG,AAAA,cAAc,CACnB,eAAe,CASb,EAAE,CAAC;EACD,aAAa,EAAE,IAAI;EACnB,KAAK,ECVI,OAAO;CDejB;;AAjBL,AAcM,OAdC,AAAA,cAAc,CACnB,eAAe,CASb,EAAE,AAIC,IAAK,CAAA,cAAc,EAAE;EACpB,UAAU,EAAE,IAAI;CACjB;;AAhBP,AAmBI,OAnBG,AAAA,cAAc,CACnB,eAAe,CAkBb,CAAC,CAAC;EACA,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "privacy_policy.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "privacy_policy.css"
+}

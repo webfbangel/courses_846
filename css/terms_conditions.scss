@@ -1,0 +1,26 @@
+@import "./variables";
+
+section#termsConditions {
+  .sectionWrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 4rem 10px;
+    .title {
+      margin-bottom: 2rem;
+      color: $colorMagenta;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: $colorMagenta;
+
+      &:not(:first-of-type) {
+        margin-top: 2rem;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

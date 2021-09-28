@@ -1,0 +1,374 @@
+@import "_variables";
+
+section#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/images/guy_studiying.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  > * {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .sectionWrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    padding: 15vh 30px;
+    z-index: 2;
+    .headline {
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 3.5rem;
+      color: $colorWhite;
+      max-width: 400px;
+      margin: clamp();
+      margin-bottom: clamp(30px, 10vh, 60px);
+    }
+
+    .subHeadline {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $colorWhite;
+      max-width: 500px;
+      line-height: 1.3rem;
+      margin-bottom: clamp(10px, 5vh, 30px);
+    }
+
+    button {
+      border: none;
+      display: block;
+      border-radius: 0.4rem;
+      background-color: $colorPrimary;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 0 4px $colorPrimary;
+      a {
+        display: block;
+        color: $colorBlack;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#home {
+    .sectionWrapper {
+      .headline {
+        font-size: 2.5rem;
+        line-height: none;
+      }
+
+      .subHeadline {
+        font-size: 1rem;
+      }
+
+      button {
+        a {
+          padding: 0.7rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+section#courses {
+  .sectionWrapper {
+    padding: 4rem 10px;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    .coursesWrapper {
+      .course {
+        display: grid;
+        min-height: clamp(250px, 50vh, 400px);
+        margin-bottom: 3rem;
+
+        &.right {
+          grid-template-columns: 45fr 55fr;
+        }
+        &.left {
+          grid-template-columns: 55fr 45fr;
+        }
+
+        .images {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 5px;
+          .image {
+            width: 100%;
+            height: 100%;
+            background-image: url("/assets/images/photoshop_course_image_one.jpg");
+            background-position: center;
+            background-size: cover;
+
+            &.imageOne {
+              background-image: url("/assets/images/photoshop_course_image_one.jpg");
+            }
+            &.imageTwo {
+              background-image: url("/assets/images/photoshop_course_image_one.jpg");
+            }
+            &.imageThree {
+              background-image: url("/assets/images/photoshop_course_image_one.jpg");
+            }
+            &.imageFour {
+              background-image: url("/assets/images/photoshop_course_image_one.jpg");
+            }
+          }
+        }
+        .information {
+          padding: clamp(30px, 7vh, 80px) clamp(30px, 7vw, 80px);
+
+          .name {
+            font-weight: 700;
+            font-size: 2rem;
+          }
+          .underline {
+            width: 20%;
+            height: 4px;
+            background-color: $colorSecondary;
+            margin-bottom: 1rem;
+          }
+          .description {
+            font-weight: 300;
+            margin-bottom: 1.4rem;
+          }
+          .getInTouch {
+            border: 3px solid $colorSecondary;
+            border-radius: 10px;
+            background-color: $colorWhite;
+            color: $colorSecondary;
+            outline: none;
+            transition: all 200ms ease-in-out;
+            a {
+              display: block;
+              padding: 0.7rem 1.5rem;
+              transition: all 200ms ease-in-out;
+            }
+            &:hover {
+              background-color: $colorSecondary;
+              a {
+                color: $colorWhite;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#courses {
+    .sectionWrapper {
+      .coursesWrapper {
+        .course {
+          display: grid;
+          min-height: clamp(250px, 50vh, 400px);
+          margin-bottom: 3rem;
+          &.left,
+          &.right {
+            grid-template-columns: 1fr;
+            grid-template-rows: 5fr 4fr;
+          }
+          .images {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: none;
+            grid-gap: 5px;
+            grid-row: 2/-1;
+
+            .image {
+              &.imageTwo {
+                display: none;
+              }
+              &.imageThree {
+                display: none;
+              }
+              &.imageFour {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#whyUs {
+  background-color: $colorGray100;
+  .sectionWrapper {
+    padding: 4rem 10px;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    .title {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .whyCards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto 1fr;
+      grid-gap: 2rem;
+      .whyCard {
+        display: grid;
+        justify-items: center;
+        align-content: start;
+
+        .icon {
+          width: 100px;
+          height: 100px;
+          border: 2px solid $colorBlackish;
+          border-radius: 50%;
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          i {
+            color: $colorBlackish;
+            font-size: 30px;
+          }
+        }
+        .reason {
+          font-weight: 700;
+          align-self: start;
+        }
+
+        .description {
+          font-weight: 300;
+          font-size: 1.1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#whyUs {
+    .sectionWrapper {
+      .whyCards {
+        display: grid;
+        grid-template-columns: none;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+        grid-gap: 2rem;
+        .whyCard {
+          max-width: 400px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+section#contact {
+  background-color: $colorPrimary;
+  .sectionWrapper {
+    padding: 4rem 10px;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    .contactHeadline {
+      max-width: 450px;
+      justify-self: end;
+      .headline {
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: right;
+      }
+      .subHeadline {
+        text-align: right;
+      }
+    }
+
+    form {
+      max-width: 450px;
+      .formItem {
+        width: 100%;
+        margin-bottom: 16px;
+        label {
+          width: 100%;
+          margin-bottom: 6px;
+          font-weight: 600;
+          display: block;
+        }
+        input,
+        textarea {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 10px;
+          background-color: $colorWhite;
+          box-shadow: 0 0px 2px $colorGray300;
+        }
+        input {
+          height: 40px;
+        }
+
+        textarea {
+          height: 100px;
+        }
+      }
+
+      .submitMessage {
+        .errors {
+          font-size: 0.85rem;
+          color: red;
+        }
+        .success {
+          font-size: 0.85rem;
+          color: $colorBlack;
+        }
+      }
+
+      button[type="submit"] {
+        background-color: $colorBlack;
+        color: $colorPrimary;
+        padding: 10px 40px;
+        outline: none;
+        cursor: pointer;
+        border: 3px solid $colorBlack;
+        &:hover {
+          background-color: $colorPrimary;
+          color: $colorBlack;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#contact {
+    background-color: $colorPrimary;
+    .sectionWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
