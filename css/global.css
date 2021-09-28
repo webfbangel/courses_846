@@ -3,7 +3,7 @@
 section#home {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/images/guy_studiying.jpg");
+  background-image: url("../assets/images/guy_studiying.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -97,6 +97,54 @@ section#courses .sectionWrapper .coursesWrapper .course {
   margin-bottom: 3rem;
 }
 
+section#courses .sectionWrapper .coursesWrapper .course.courseOne .imageOne {
+  background-image: url("https://www.creativelive.com/blog/wp-content/uploads/2017/01/Aaron_Nace_PSW15_Day3_CL_EKP_004.jpg");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseOne .imageTwo {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTha_IG4XjovNjU2FKtcyU7D7yDG-Hj9ioKt8FSv5gncK9wKU971JiZIa8GSOAbrCW4zOE&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseOne .imageThree {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVggRq3_72nbAKw-GBW0i-tzSWCIRZyNLg_nFiWjzu3YSeok6clMIh8EWANmAtDhmm3w&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseOne .imageFour {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDfkJQrr4qwVidAygtTe2Mo3IpadbXbvYY8JjT0AWLTl7Vj7PiQw2nitNZ5u4jfumTjw&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseTwo .imageOne {
+  background-image: url("https://www.courselounge.com/wp-content/uploads/best-illustrator-courses-online.jpg");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseTwo .imageTwo {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdpyy68sYC1I6v13hlWCf-ubBmxw0_SogozQnYFKDwgrhyC8GyjCFVYo_e_0QM9gaV3g&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseTwo .imageThree {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWHwJ85LKrs3sBljOt3dyzug_H0M9paWzCoUtoltZhMMQ1wdx2GJsbbBiirWHB4GriXk&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseTwo .imageFour {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnRWCpwuXpCufBQxhQAHTSmApzAx0oJxArYm3odjpRS_WLtqNoHbfwICdXUryoyNkho8&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseThree .imageOne {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa0Xma_nkRR3ZYpxLUlPpS0G1vo-RUj8ZL5Nsh4rYur5A5yUonuRTHHFEISn8hPzUT4sE&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseThree .imageTwo {
+  background-image: url("https://static.skillshare.com/uploads/discussion/tmp/58f14dd5");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseThree .imageThree {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfG3NYMDypvpezly_qtE7yjRsRxkcv4ILc3W-tE2-hmNC1y-NMGMspEFAup0safiOVog&usqp=CAU");
+}
+
+section#courses .sectionWrapper .coursesWrapper .course.courseThree .imageFour {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvP6ReM1Wn1QLndF8HQ6zejYN1V-ONRQJfMg&usqp=CAU");
+}
+
 section#courses .sectionWrapper .coursesWrapper .course.right {
   -ms-grid-columns: 45fr 55fr;
       grid-template-columns: 45fr 55fr;
@@ -120,25 +168,8 @@ section#courses .sectionWrapper .coursesWrapper .course .images {
 section#courses .sectionWrapper .coursesWrapper .course .images .image {
   width: 100%;
   height: 100%;
-  background-image: url("/assets/images/photoshop_course_image_one.jpg");
   background-position: center;
   background-size: cover;
-}
-
-section#courses .sectionWrapper .coursesWrapper .course .images .image.imageOne {
-  background-image: url("/assets/images/photoshop_course_image_one.jpg");
-}
-
-section#courses .sectionWrapper .coursesWrapper .course .images .image.imageTwo {
-  background-image: url("/assets/images/photoshop_course_image_one.jpg");
-}
-
-section#courses .sectionWrapper .coursesWrapper .course .images .image.imageThree {
-  background-image: url("/assets/images/photoshop_course_image_one.jpg");
-}
-
-section#courses .sectionWrapper .coursesWrapper .course .images .image.imageFour {
-  background-image: url("/assets/images/photoshop_course_image_one.jpg");
 }
 
 section#courses .sectionWrapper .coursesWrapper .course .information {
